@@ -13,10 +13,8 @@ return {
     end,
   },
   { "neovim/nvim-lspconfig" },
-
   { "hrsh7th/nvim-cmp", event = "InsertEnter" },
   { "hrsh7th/cmp-nvim-lsp" },
-
   {
     "simrat39/rust-tools.nvim",
     ft = { "rust" },
@@ -33,7 +31,6 @@ return {
       })
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -44,19 +41,14 @@ return {
       indent = { enable = true },
     },
   },
-
   { "lewis6991/gitsigns.nvim", event = "BufReadPost" },
   { "tpope/vim-fugitive", cmd = "Git" },
-
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = { options = { theme = "gruvbox", icons_enabled = false } },
   },
-  {
-	  "echasnovski/mini.nvim",
-	  version = '*'
-  },
+  { "echasnovski/mini.nvim", version = '*' },
   {
 	  "stevearc/oil.nvim",
 	  opts = {},
